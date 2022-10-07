@@ -3,7 +3,7 @@
 ## Installation
 Clone this project
 ```
-the link goes here
+git clone https://github.com/Wrightlab1/pythonAPITemplate.git
 ```
 Install dependencies
 ```
