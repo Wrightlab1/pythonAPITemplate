@@ -1,7 +1,7 @@
 # IMPORT
-from lib.log import *
-from lib.req import *
-from lib.printJSON import *
+from utils.log import *
+from utils.req import *
+from utils.printJSON import *
 
 # SETUP LOGGING
 create_log()
@@ -21,10 +21,10 @@ def listUsers():
     data = {}
     # specify RESTful action get,patch,put,post,delete
     action = "get"
-    # send the request the send_reequest() function is imported from ./lib/req.py
+    # send the request the send_reequest() function is imported from ./utils/req.py
     # It takes 3 arguments action(the RESTFUL API verb), the url(everything after 'https://api.zoom.us/v2/'), and data(a dict that acts as the body of the request)
     response = send_request(action, url, data)
-    # prettyPrint response
+    # prettyPrint response imported from ./utils/printJSON.py
     printJSON(response)
 
 
