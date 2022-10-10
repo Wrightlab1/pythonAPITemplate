@@ -1,9 +1,6 @@
 import logging
 import requests
 import json
-import base64
-from dotenv import load_dotenv
-import os
 from lib.token import *
 
 

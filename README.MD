@@ -20,7 +20,9 @@ You will need to create a ```.env``` file  in the root of the project with the f
 ACCOUNTID="yourAccountID"
 CLIENTID="yourClientID"
 CLIENTSECRET="yourClientSecret"
+LOGGING_LEVEL="DEBUG"
 ```
+LOGGING_LEVEL must be an  upper-case string and can be set to INFO, DEBUG, or WARNING
 ### Example GET Request
 ```
 def listUsers():
