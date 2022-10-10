@@ -1,7 +1,7 @@
 import logging
 import requests
 import json
-from lib.token import *
+from utils.token import *
 
 
 BASE_URL = 'https://api.zoom.us/v2/'

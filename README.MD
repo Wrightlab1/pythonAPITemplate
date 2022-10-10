@@ -13,6 +13,7 @@ pip install -r requirements.txt
 ## Usage
 This project should act as a template to create scripts to interact with the Zoom REST API
 Authentication is Handled through a Zoom [Server to Server OAuth application](https://marketplace.zoom.us/docs/guides/build/server-to-server-oauth-app/)
+You should create a seperate server to server OAuth app for this script. This will ensure that this app does not
 Be Sure to Add the necessary scopes to your marketplace app
 
 You will need to create a ```.env``` file  in the root of the project with the following
@@ -41,4 +42,4 @@ def listUsers():
 ```
 ## Logging
 A logfile is generate for you in ``` ./logs/log.log```
-This logfile will containg all of the information you need to debug your Zoom REST API requests
+This logfile will contain all of the information you need to debug your Zoom REST API requests

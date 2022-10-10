@@ -12,6 +12,7 @@ create_log()
 # Example request
 def listUsers():
     # Write info to the Log
+    # you can use logging.info, .debug, or .warning
     logging.info("ListUsers")
     # set the URL for the api request
     # if query paramters are needed add them here
