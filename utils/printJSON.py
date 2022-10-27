@@ -2,5 +2,8 @@ import json
 
 
 def printJSON(data):
-    parsed = json.loads(data)
-    print(json.dumps(parsed, indent=4))
+    try:
+        parsed = json.loads(data)
+        print(json.dumps(parsed, indent=4))
+    except ValueError as e:
+        print(data)
