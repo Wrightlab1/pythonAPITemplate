@@ -33,4 +33,5 @@ def send_request(action, url, data):
     else:
         logging.warning("'Status: {0}', 'RESPONSE: {1}'".format(
             r.status_code, r.content))
+    print("Status Code: %s" % r.status_code)
     return r.content
