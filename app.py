@@ -26,7 +26,7 @@ def listUsers():
     # It takes 3 arguments action(the RESTFUL API verb), the url(everything after 'https://api.zoom.us/v2/'), and data(a dict that acts as the body of the request)
     response = send_request(action, url, data)
     # prettyPrint response imported from ./utils/printJSON.py
-    printJSON(response)
+    # printJSON(response)
 
 
 listUsers()
